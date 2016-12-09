@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/pakyow/assets.git
+  revision: 8b80cf61448d96fc10661c74a5c17684c820821b
+  specs:
+    pakyow-assets (0.1.2)
+      pakyow-core (>= 0.11)
+      pakyow-presenter (>= 0.11)
+      pakyow-support (>= 0.11)
+      sass (~> 3.4)
+      yui-compressor (~> 0.12)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,12 +43,6 @@ GEM
       pakyow-test (= 0.11.3)
       pakyow-ui (= 0.11.3)
       thor (~> 0.19)
-    pakyow-assets (0.1.2)
-      pakyow-core (~> 0)
-      pakyow-presenter (~> 0)
-      pakyow-support (~> 0)
-      sass (~> 3.4)
-      yui-compressor (~> 0.12)
     pakyow-core (0.11.3)
       pakyow-support (= 0.11.3)
       rack (~> 1.6)
@@ -113,7 +118,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   pakyow (~> 0.11.3)
-  pakyow-assets
+  pakyow-assets!
   pakyow-haml
   puma
   rspec

@@ -6,3 +6,5 @@
 
 # ignore binstubs
 bin
+.assets
+.sass-cache

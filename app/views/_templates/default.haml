@@ -7,11 +7,11 @@
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
     %link{:href => "/styles/pakyow-css/reset.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/styles/vendor/picnic.min.css", :rel => "stylesheet", :type => "text/css"}/
-    -# %link{:href => "/styles/app.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/styles/app.css", :rel => "stylesheet", :type => "text/css"}/
     %script{:src => "/scripts/ring/pakyow.js"}
     %meta{:charset => "UTF-8"}/
   %body
     %nav
       %a.brand{href: '/'} Telepathy
-    %main.container
+    %main.container.flex.five{style: "padding-top: 80px; width: 90%; max-width: 960px; margin: 0 auto;"}
       / @container

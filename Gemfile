@@ -14,4 +14,4 @@ group :test do
 end
 
 gem 'pakyow-haml'
-# gem 'pakyow-assets'
+gem 'pakyow-assets', github: 'pakyow/assets'
