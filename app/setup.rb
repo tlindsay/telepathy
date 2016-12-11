@@ -11,6 +11,16 @@ Pakyow::App.define do
       Dotenv.load
     end
 
+    db_options = {
+      adapter: ENV['DB_ADAPTER'],
+      database: ENV['DB_DATABASE'],
+      host: ENV['DB_HOST'],
+      port: ENV['DB_PORT'],
+      user: ENV['DB_USER'],
+      password: ENV['DB_PASSWORD']
+    }
+
+    $db = Sequel.connect(db_options)
     app.name = 'telepathy'
   end
 
