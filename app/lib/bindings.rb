@@ -1,3 +1,5 @@
 Pakyow::App.bindings do
-  # define bindings here
+  scope :comment do
+    restful :comment
+  end
 end

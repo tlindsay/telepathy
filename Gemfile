@@ -13,5 +13,5 @@ group :test do
   gem 'rspec'
 end
 
-gem 'pakyow-haml'
+gem 'pakyow-slim'
 gem 'pakyow-assets', github: 'pakyow/assets'
