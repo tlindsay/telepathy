@@ -10,6 +10,7 @@ Pakyow::App.mutable :comment do
 
   action :create do |params|
     redis.lpush(:comments, params[:content])
+    Comment.create(content: params[:content])
   end
 end
 
