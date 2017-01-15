@@ -20,7 +20,7 @@ Pakyow::App.define do
       password: ENV['DB_PASSWORD']
     }
 
-    $db = Sequel.connect(db_options)
+    $db = app.db = Sequel.connect(db_options)
     app.name = 'telepathy'
   end
 
