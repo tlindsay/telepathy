@@ -18,3 +18,7 @@ gem 'pakyow-slim'
 gem 'pakyow-assets', github: 'pakyow/assets'
 gem 'mysql2'
 gem 'sequel'
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'carrierwave-sequel', require: 'carrierwave/sequel'
+gem 'pakyow-rake-db', github: 'bryanp/pakyow-rake-db', require: false
