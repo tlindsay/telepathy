@@ -11,6 +11,10 @@ Pakyow::App.define do
       Dotenv.load
     end
 
+    CarrierWave.configure do |config|
+      config.root = File.join(File.expand_path(app.root), 'public')
+    end
+
     db_options = {
       adapter: ENV['DB_ADAPTER'],
       database: ENV['DB_DATABASE'],
